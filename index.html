@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="assets/scripts/main.js"></script>
     <title>Expense Tracker</title>
 </head>
 <body>
@@ -25,20 +24,23 @@
                 <div class="boxes">
                     <div class="box">
                         <h3>INCOME</h3>
-                        <p class="income">1000 €</p>
+                        <p class="income">0 €</p>
                     </div>
                     <div class="box">
                         <h3>EXPENSE</h3>
-                        <p class="expense">500 €</p>
+                        <p class="expense">0 €</p>
                     </div>
                 </div>
             </section>
             <section>
                 <div class="expenses">
                     <h2>Expenses</h2>
-                    <div class="list">
-                        <div class="list-item">
-                            
+                    <div id="list" class="list">
+                        <div class="list-item income-item">
+                            <p>First</p>
+                        </div>
+                        <div class="list-item expense-item">
+                            <p>Second</p>
                         </div>
                     </div>
                 </div>
@@ -49,16 +51,17 @@
                     <p>Use positive numbers for income and negative numbers (-) for expenses.</p>
                     <form id="form"> 
                         <label>Transaction name:</label>
-                        <input type="text" name="name" placeholder="ex. groceries">
+                        <input id ="name" type="text" name="name" placeholder="ex. groceries">
                         <label>Amount:</label>
-                        <input type="text" name="amount" placeholder="-30">
+                        <input id="amount" type="number" name="amount" placeholder="-30">
                     </form>
                     <div class="button">
-                        <button class="btn">Add transaction</button>
+                        <button id="submit" class="btn">Add transaction</button>
                     </div>
                 </div>
             </section>
         </div>
     </div>
+    <script type="text/javascript" src="assets/scripts/main.js"></script>
 </body>
 </html>
